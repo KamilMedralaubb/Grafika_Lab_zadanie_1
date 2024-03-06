@@ -116,21 +116,126 @@
         graphics.fill()
 
         // mouth 
-        graphics.beginPath();
-        graphics.scale(1.2,1.2)
-        graphics.rotate(Math.PI/2)
-        graphics.translate(-100, 0); 
+//         graphics.beginPath();
+// graphics.scale(1.2, 1.2);
+// graphics.translate(-100, 0); // Przesunięcie w górę
 
-        graphics.moveTo(50, 50); 
-        graphics.quadraticCurveTo(30, 70, 20, 90);
+// // Ustawienie koloru wypełnienia na czarny
+// graphics.fillStyle = 'black';
 
-        graphics.lineTo(35, 95);
-        graphics.quadraticCurveTo(50, 90, 65, 95);
+// // Kontur uśmiechu
+// graphics.arc(100, 50, 50, 0, Math.PI, false);
+// graphics.moveTo(50, 100);
 
-        graphics.lineTo(80, 90);
-        graphics.quadraticCurveTo(90,70,70,50); 
-        graphics.closePath();
-        graphics.fill();
+
+// // Ząbki
+// graphics.moveTo(60, 85);
+// graphics.lineTo(65, 75);
+// graphics.lineTo(70, 85);
+// graphics.moveTo(80, 85);
+// graphics.lineTo(85, 75);
+// graphics.lineTo(90, 85);
+// graphics.moveTo(110, 85);
+// graphics.lineTo(115, 75);
+// graphics.lineTo(120, 85);
+// graphics.moveTo(130, 85);
+// graphics.lineTo(135, 75);
+// graphics.lineTo(140, 85);
+
+// graphics.closePath();
+// graphics.fill();
+
+graphics.beginPath();
+graphics.scale(1.2, 1.2);
+graphics.translate(-100, 0); // Przesunięcie w górę
+
+// Ustawienie koloru wypełnienia na czarny
+graphics.fillStyle = 'black';
+
+// Kontur uśmiechu
+graphics.arc(100, 50, 50, 0, Math.PI, false);
+graphics.moveTo(50, 100);
+
+// 4 kwadratowe ząbki po lewej stronie
+graphics.moveTo(60, 65);
+graphics.lineTo(60, 55);
+graphics.lineTo(70, 55);
+graphics.lineTo(70, 65);
+graphics.moveTo(70, 65);
+graphics.lineTo(70, 55);
+graphics.lineTo(80, 55);
+graphics.lineTo(80, 65);
+graphics.moveTo(80, 65);
+graphics.lineTo(80, 55);
+graphics.lineTo(90, 55);
+graphics.lineTo(90, 65);
+graphics.moveTo(90, 65);
+graphics.lineTo(90, 55);
+graphics.lineTo(100, 55);
+graphics.lineTo(100, 65);
+
+// Przerwa między 5 a 6 zębem
+graphics.moveTo(100, 65);
+graphics.lineTo(140, 55);
+graphics.lineTo(135, 55);
+graphics.lineTo(135, 65);
+
+// 4 kwadratowe ząbki w środku
+graphics.moveTo(110, 65);
+graphics.lineTo(110, 55);
+graphics.lineTo(120, 55);
+graphics.lineTo(120, 65);
+graphics.moveTo(120, 65);
+graphics.lineTo(120, 55);
+graphics.lineTo(130, 55);
+graphics.lineTo(130, 65);
+graphics.moveTo(130, 65);
+graphics.lineTo(130, 55);
+graphics.lineTo(140, 55);
+graphics.lineTo(140, 65);
+
+graphics.closePath();
+graphics.fill();
+
+// Ustawienie koloru wypełnienia na biały
+graphics.fillStyle = 'white';
+
+// Wypełnienie ząbków
+graphics.beginPath();
+graphics.moveTo(60, 65);
+graphics.lineTo(60, 55);
+graphics.lineTo(70, 55);
+graphics.lineTo(70, 65);
+graphics.moveTo(70, 65);
+graphics.lineTo(70, 55);
+graphics.lineTo(80, 55);
+graphics.lineTo(80, 65);
+graphics.moveTo(80, 65);
+graphics.lineTo(80, 55);
+graphics.lineTo(90, 55);
+graphics.lineTo(90, 65);
+graphics.moveTo(90, 65);
+graphics.lineTo(90, 55);
+graphics.lineTo(100, 55);
+graphics.lineTo(100, 65);
+graphics.moveTo(110, 65);
+graphics.lineTo(110, 55);
+graphics.lineTo(120, 55);
+graphics.lineTo(120, 65);
+graphics.moveTo(120, 65);
+graphics.lineTo(120, 55);
+graphics.lineTo(130, 55);
+graphics.lineTo(130, 65);
+graphics.moveTo(130, 65);
+graphics.lineTo(130, 55);
+graphics.lineTo(140, 55);
+graphics.lineTo(140, 65);
+graphics.closePath();
+graphics.fill();
+
+
+
+
 
         
 
